@@ -6,9 +6,9 @@ body {
 	.container{
 		width: 100%;
 		height: 100%;
-		scroll-snap-type: y mandatory; //scrollea en el eje "y" o en "x" o en both, se puede usar "proximity" para paginas grandes;
-		overflow-y: scroll;  //si estaba en el eje x el scroll type ponele -x y si esta en both no le pones nada;
-		/*display: flex; si queres se scrollee horizontalmente*/
+		scroll-snap-type: y mandatory; //scrollea en el eje "y" o en "x" o en "both" dependiendo la opcion que elijas, se puede usar "proximity" para paginas grandes;
+		overflow-y: scroll;  //si estaba en el eje x el scroll-snap-type pones -x y si esta en both no le pones nada;
+		/*display: flex; si queres que se alineen horizontalmente*/
 
 		section {
 			flex: none;
@@ -17,7 +17,7 @@ body {
 			align-items: center;
 			width: 100vw;
 			height: 100vh;
-			scroll-snap-align: start; //va a empezar a snap al principio de las paginas;
+			scroll-snap-align: start; //va a empezar a snap al principio de las secciones;
 
 
 			&:nth-child(1) {
